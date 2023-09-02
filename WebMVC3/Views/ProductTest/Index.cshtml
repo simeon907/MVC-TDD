@@ -1,0 +1,25 @@
+﻿@using WebMVC3.Models
+@model IList<Product>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        <h2>Index</h2>
+        @foreach (Product item in Model)
+        {
+            <h3>
+                @item.Name &nbsp; @item.Category &nbsp; @item.Price &nbsp;
+            </h3>
+        }
+    </div>
+</body>
+</html>
