@@ -14,7 +14,9 @@ namespace WebMVC3.Test
         {
             _products = new List<Product>
             {
-                new Product{Id = 5, Name = "Soccer ball", Category = "Soccer", Price = 19.99m}
+                new Product{Id = 5, Name = "Soccer ball", Category = "Soccer", Price = 19.99m},
+                new Product{Id = 6, Name = "Lamp", Category = "Decoration", Price = 14.99m},
+                new Product{Id = 7, Name = "Stool", Category = "Decoration", Price = 9.99m}
             };
         }
         public void AddProduct(Product product)

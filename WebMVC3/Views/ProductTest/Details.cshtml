@@ -1,0 +1,42 @@
+﻿@model WebMVC3.Models.Product
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+    <link href="~/App_Themes/Theme1/CommonStyles.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <h2>Product Details</h2>
+        <div class="form-group">
+            <label for="txtId">ID:</label>
+            <input type="text" id="txtId" class="form-control" readonly value="@Model.Id">
+        </div>
+
+        <div class="form-group">
+            <label for="txtName">Product Name:</label>
+            <input type="text" id="txtName" class="form-control" readonly value="@Model.Name">
+        </div>
+
+        <div class="form-group">
+            <label for="ddlCategory">Category:</label>
+            <input type="text" id="ddlCategory" class="form-control" readonly value="@Model.Category">
+        </div>
+
+        <div class="form-group">
+            <label for="txtPrice">Price:</label>
+            <input type="text" id="txtPrice" class="form-control" readonly value="@Model.Price">
+        </div>
+    </div>
+
+    <div>
+        <a href="/ProductTest/Index" class="btn btn-primary">Back</a>
+    </div>
+</body>
+</html>

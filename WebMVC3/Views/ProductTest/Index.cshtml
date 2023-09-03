@@ -10,16 +10,21 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
+    <link href="~/App_Themes/Theme1/CommonStyles.css" rel="stylesheet" />
 </head>
 <body>
-    <div> 
+    <div>
         <h2>Index</h2>
         @foreach (Product item in Model)
         {
             <h3>
-                @item.Name &nbsp; @item.Category &nbsp; @item.Price &nbsp;
+                @item.Name &nbsp; @item.Category &nbsp; @item.Price &nbsp;&nbsp;&nbsp; 
+                <a href="/ProductTest/Details/@item.Id">Details</a>
             </h3>
         }
+    </div>
+    <div>
+        <a href="/ProductTest/Create" class="btn btn-primary">Add new product</a>
     </div>
 </body>
 </html>

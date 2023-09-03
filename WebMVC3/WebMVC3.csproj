@@ -95,6 +95,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Themes\Theme1\CommonStyles.css" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -119,6 +120,8 @@
     <Content Include="Views\web.config" />
     <None Include="packages.config" />
     <Content Include="Views\ProductTest\Index.cshtml" />
+    <Content Include="Views\ProductTest\Create.cshtml" />
+    <Content Include="Views\ProductTest\Details.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

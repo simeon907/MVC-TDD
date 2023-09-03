@@ -52,9 +52,19 @@ namespace WebMVC3.Controllers
             if (ModelState.IsValid)
             {
                 _repository.AddProduct(product);
-                return RedirectToAction("Index");
+                return RedirectToAction("Index", _repository.GetProducts());
             }
             return View("Create");
+        }
+
+        public ActionResult Details(int id)
+        {
+            if (id < 1)
+                return RedirectToAction("Index");
+
+            Product product = _repository.FindById(id);
+
+            return View("Details", product);
         }
     }
 }
